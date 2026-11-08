@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // writeLayer packs roots and returns the result, failing the test on error.

@@ -7,7 +7,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // TestCombineArchive checks the streamed variant produces a non-empty archive.

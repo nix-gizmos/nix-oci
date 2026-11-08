@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // goldenTree writes the fixture the golden digests are taken over: a few

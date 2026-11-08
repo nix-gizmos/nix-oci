@@ -79,8 +79,8 @@
               # lint rejects one.
               meta = {
                 description = "Native, deterministic OCI image layout writer for Nix";
-                homepage = "https://github.com/systemstart/nix-oci";
-                changelog = "https://github.com/systemstart/nix-oci/releases/tag/v${version}";
+                homepage = "https://github.com/nix-gizmos/nix-oci";
+                changelog = "https://github.com/nix-gizmos/nix-oci/releases/tag/v${version}";
                 license = pkgs.lib.licenses.gpl3Only;
                 mainProgram = "nix-oci";
                 platforms = pkgs.lib.platforms.unix;
@@ -123,7 +123,7 @@
             user = "1000:1000";
             exposedPorts = [ "8080/tcp" ];
             labels."org.opencontainers.image.title" = "hello";
-            annotations."org.opencontainers.image.source" = "https://github.com/systemstart/nix-oci";
+            annotations."org.opencontainers.image.source" = "https://github.com/nix-gizmos/nix-oci";
             binLinks = [ pkgs.hello ];
             rootLinks."bin/greet" = "${pkgs.hello}/bin/hello";
             extraCommands = ''
@@ -190,7 +190,7 @@
             };
         });
 
-      # `nix run github:systemstart/nix-oci#diff-digests -- -r <ref>` from a
+      # `nix run github:nix-gizmos/nix-oci#diff-digests -- -r <ref>` from a
       # consumer's own repo, so answering "does this bump move my digests?"
       # needs no checkout of this one and no hand-rolled comparison. The
       # script explains why `diff -r` over two layouts is the wrong

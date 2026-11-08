@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 func readFile(t *testing.T, path string) []byte {
