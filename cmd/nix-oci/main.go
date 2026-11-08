@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // version is the fallback for `go run`/`go build`. Release binaries get the real

@@ -1,4 +1,4 @@
-module github.com/systemstart/nix-oci
+module github.com/nix-gizmos/nix-oci
 
 go 1.27
 

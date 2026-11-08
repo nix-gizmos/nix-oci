@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // fakeStore builds a minimal store-path-shaped tree and returns its absolute

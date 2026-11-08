@@ -26,9 +26,9 @@ the loop.
 ## Install
 
 ```sh
-nix run github:systemstart/nix-oci -- --help
+nix run github:nix-gizmos/nix-oci -- --help
 # or
-go install github.com/systemstart/nix-oci/cmd/nix-oci@latest
+go install github.com/nix-gizmos/nix-oci/cmd/nix-oci@latest
 ```
 
 Or download an archive below (Linux and macOS, amd64 and arm64). Most users
@@ -38,7 +38,7 @@ never invoke the CLI directly: the flake exposes `buildOCIImage`,
 ## Reproducibility
 
 Identical inputs produce byte-identical output at every level — layer, config,
-manifest, index. [DESIGN.md](https://github.com/systemstart/nix-oci/blob/main/DESIGN.md#determinism)
+manifest, index. [DESIGN.md](https://github.com/nix-gizmos/nix-oci/blob/main/DESIGN.md#determinism)
 documents the levers that make that hold, and what would break it.
 
 ## Changelog
@@ -73,7 +73,7 @@ While the major version is 0, the Nix builder arguments and the CLI surface
 may still change between minor releases.
 
 Archives are attested with build provenance; verify with
-`gh attestation verify <archive> --repo systemstart/nix-oci`.
+`gh attestation verify <archive> --repo nix-gizmos/nix-oci`.
 """
 
 trim = false

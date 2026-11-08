@@ -2,8 +2,8 @@
 
 A native, deterministic [OCI image layout](https://github.com/opencontainers/image-spec/blob/main/image-layout.md) writer for Nix.
 
-[![CI](https://github.com/systemstart/nix-oci/actions/workflows/ci.yml/badge.svg)](https://github.com/systemstart/nix-oci/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/systemstart/nix-oci/branch/main/graph/badge.svg)](https://codecov.io/gh/systemstart/nix-oci)
+[![CI](https://github.com/nix-gizmos/nix-oci/actions/workflows/ci.yml/badge.svg)](https://github.com/nix-gizmos/nix-oci/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/nix-gizmos/nix-oci/branch/main/graph/badge.svg)](https://codecov.io/gh/nix-gizmos/nix-oci)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 
 Give it a Nix closure, get a spec-compliant OCI image any tool can consume —
@@ -45,10 +45,16 @@ image/
 With flakes:
 
 ```sh
-nix build github:systemstart/nix-oci      # result/bin/nix-oci
+nix build github:nix-gizmos/nix-oci      # result/bin/nix-oci
 # or run without installing:
-nix run github:systemstart/nix-oci -- version
+nix run github:nix-gizmos/nix-oci -- version
 ```
+
+The project moved from `systemstart/nix-oci` to `nix-gizmos/nix-oci` after
+v0.6.0, and the Go module path changed with it: releases up to v0.6.0 are
+`github.com/systemstart/nix-oci`, later ones `github.com/nix-gizmos/nix-oci`.
+GitHub redirects the old URLs, but update `github:systemstart/nix-oci` flake
+inputs to the new owner.
 
 From a clone, `nix build .#nix-oci`, or `go build ./cmd/nix-oci` if you already
 have Go 1.27. Note that a hand-built binary may compress differently from the
@@ -321,7 +327,7 @@ compressor digest-affecting, so a nix-oci bump may or may not re-digest the
 images you build. Rather than guess, measure it from your own repo:
 
 ```sh
-nix run github:systemstart/nix-oci#diff-digests -- -r github:systemstart/nix-oci/vX.Y.Z
+nix run github:nix-gizmos/nix-oci#diff-digests -- -r github:nix-gizmos/nix-oci/vX.Y.Z
 # -a ATTR  image attribute (default packages.<system>.default)
 # -i INPUT input to override (default nix-oci)
 # -- ARGS  extra flags your build needs, passed to both sides (e.g. -- --impure)

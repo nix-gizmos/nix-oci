@@ -27,7 +27,7 @@
 #   scripts/diff-digests.sh -r REF [-a ATTR] [-i INPUT] [-- BUILD_ARGS...]
 #
 #   -r REF     flake reference to compare against, e.g.
-#              github:systemstart/nix-oci/v0.6.0, or a local checkout path
+#              github:nix-gizmos/nix-oci/v0.6.0, or a local checkout path
 #   -a ATTR    image attribute to build, without the leading '.#'
 #              (default: packages.<current-system>.default)
 #   -i INPUT   flake input to override (default: nix-oci)

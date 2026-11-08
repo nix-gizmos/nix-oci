@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // TestWriteProducesResolvableLayout drives oci.Write end to end and checks the

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // writeWithCreated builds a one-root image, varying only Created.

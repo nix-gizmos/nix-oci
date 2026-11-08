@@ -44,7 +44,7 @@ changelog:
 
 release:
   github:
-    owner: systemstart
+    owner: nix-gizmos
     name: nix-oci
   # "auto" marks a release as a pre-release only when the tag carries a semver
   # pre-release identifier (v0.4.0-rc1). A plain v0.4.0 is a full release.

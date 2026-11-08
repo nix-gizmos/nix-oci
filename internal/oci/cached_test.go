@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/systemstart/nix-oci/internal/oci"
+	"github.com/nix-gizmos/nix-oci/internal/oci"
 )
 
 // TestAssembleMatchesWrite is the load-bearing property of the cached path: a
