@@ -50,7 +50,7 @@
       "matchManagers": [
         "custom.regex"
       ],
-      "commitMessagePrefix": "build(deps):",
+      "commitMessagePrefix": "fix(go):",
       "prBodyNotes": [
         "This moves the Go release the images are compressed with, so **every image digest changes**.",
         "`TestGoldenLayerDigest` fails by design: update its two constants in this PR, and say in the release notes that consumers pinning by digest must re-pull.",
